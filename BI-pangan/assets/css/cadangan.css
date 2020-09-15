@@ -1,0 +1,53 @@
+.select-label {
+	color: #495057;
+	font-size: 1rem;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+
+.mdb-select:focus ~ .select-label.active, .mdb-select:focus ~ .select-label {
+	color: #2F80ED;
+	top: 16px;
+	font-size: 0.8rem;
+}
+
+.mdb-select {
+	position: relative;
+	color: #495057;
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+
+.md-form select.mdb-select + label {
+	font-size: 0.8rem;
+	top: 16px;
+}
+
+select {
+	height:100%;
+	margin-top:20px;
+	box-sizing: content-box;
+}
+
+.md-form select.mdb-select {
+    border-bottom: 1px solid #ced4da;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: transparent;
+}
+
+div.select ,.select-selected {
+  color: #495057;
+  padding: 16px 0 16px 0
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items div,.select-selected {
+  padding: 50px;
+}

@@ -1,0 +1,31 @@
+fieldset {
+  padding: 3vh 0 5vh 0;
+}
+legend {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+legend span {
+  padding: 0 2rem 0 0;
+  margin-left: 0;
+  background-color: #fff;
+}
+
+legend {  
+    text-align: left;  
+    position: relative;   
+    z-index: 1;  
+
+}  
+
+legend:after {  
+    content: '';  
+    background-color: #ced4da;  
+    height: 1px;  
+    display: block;  
+    position: absolute;  
+    top: 15px;  
+    width: 100%;  
+    z-index: -1;
+}  

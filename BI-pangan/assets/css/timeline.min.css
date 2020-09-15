@@ -1,0 +1,89 @@
+:root {
+  --background-color: #FFFFFF;
+  --primary-color: #E66A53;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.steps {
+  width: 100%;
+  background-color: #FFF;
+  padding: 0px 0;
+  position: relative;
+  margin: auto;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  height: 60px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: calc(50px / 2);
+  z-index: 1;
+}
+
+.step {
+  padding: 0 20px 30px 50px;
+  position: relative;
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(198, 198, 198);
+  border-radius: 20px;
+  left: calc(50px / 2);
+  transform: translateX(-45%);
+  z-index: 2;
+}
+
+.step::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: rgb(198, 198, 198);
+  left: calc(50px / 2);
+  top: 0;
+  z-index: 1;
+}
+
+.step-content {
+  margin: 2vh 0 0 0;
+  padding: 2vh 2vw 2vh 2vw;
+  background-color: #eee;
+  text-align: justify;
+  width: 100%;
+}
+
+.steps::after {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 5px 0px var(--primary-color);
+  border-radius: 15px;
+  left: calc(50px / 2);
+  bottom: 0px;
+  transform: translateX(-45%);
+  z-index: 2;
+}
+
+.step-header {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+}
+
+.default-text {
+  color: #2BBBAD; 
+}

@@ -1,0 +1,121 @@
+.view {
+  background: url("http://localhost/kp/comp-repairment/assets/img/custom/home2.jpg")no-repeat center center;
+  background-size: cover;
+}
+body {
+  background-color: #f6f6f6;
+}
+.float-right {
+  float: right;
+}
+.parallax {
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+	html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    @media (max-width: 420px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 1000px;
+      }
+      .jarak {
+      	margin: 5vh 0 2vh 0;
+      } 
+      .toggle-icon {
+        float: left;
+      }
+
+      #rc-imageselect, .g-recaptcha.captcha-2 {
+        transform:scale(0.85);
+        -webkit-transform:scale(0.85);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .logo-form {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    main {
+      min-height: 100%;
+    }
+
+    @media (max-width: 360px) {
+      #rc-imageselect, .g-recaptcha {
+        transform:scale(0.95);
+        -webkit-transform:scale(0.95);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+      } 
+    }
+
+    @media (width: 320px) {
+      #rc-imageselect, .g-recaptcha {
+        transform:scale(0.83);
+        -webkit-transform:scale(0.83);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+      } 
+    }
+
+    @media (min-width: 750px) and (max-width: 850px) {
+      #rc-imageselect, .g-recaptcha {
+        transform:scale(0.57);
+        -webkit-transform:scale(0.57);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+      }  
+    }
+
+    @media (height: 1366px) and (width: 1024px) {
+      #rc-imageselect, .g-recaptcha {
+        transform:scale(0.83);
+        -webkit-transform:scale(0.83);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+      }  
+    }
+
+    @media (height: 360px) and (width: 640px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 900px;
+      }
+      .jarak {
+        margin: 5vh 0 1vh 0;
+      } 
+    }
+
+    .text-xs-center {
+        text-align: center;
+    }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
+
+  
+}
+a {
+  color: white;
+}
